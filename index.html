@@ -1,18 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SABTC Legal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SABTC — Simply A Box That Changes</title>
+  <meta name="description" content="SABTC is a minimalist puzzle game developed by Projevity Pty Ltd.">
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --text: #171717;
+      --muted: #6f6f6f;
+      --line: #deded9;
+      --accent: #f28c28;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(680px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 80px 0 60px;
+    }
+
+    .logo {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -2px;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      color: var(--muted);
+      margin-bottom: 48px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 28px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin: 0 0 10px;
+      letter-spacing: -0.5px;
+    }
+
+    p {
+      color: #444;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a {
+      display: block;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--bg);
+    }
+
+    nav a:hover {
+      border-color: var(--accent);
+    }
+
+    footer {
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding-top: 48px;
+      }
+
+      .logo {
+        font-size: 36px;
+      }
+
+      .card {
+        padding: 22px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Welcome to SABTC Legal</h1>
-    <nav>
-        <ul>
-            <li><a href="/privacy/">Privacy Policy</a></li>
-            <li><a href="/terms/">Terms of Service</a></li>
-            <li><a href="/delete-account/">Delete Account</a></li>
-        </ul>
-    </nav>
+  <main>
+    <div class="logo">SABTC</div>
+    <div class="tagline">Simply A Box That Changes.</div>
+
+    <section class="card">
+      <h1>SABTC</h1>
+
+      <p>
+        SABTC is a minimalist puzzle game developed and operated by
+        Projevity Pty Ltd.
+      </p>
+
+      <nav>
+        <a href="/privacy">Privacy Policy →</a>
+        <a href="/terms">Terms of Service →</a>
+        <a href="/delete-account">Delete Account →</a>
+      </nav>
+    </section>
+
+    <footer>
+      © 2026 Projevity Pty Ltd. All rights reserved.
+    </footer>
+  </main>
 </body>
 </html>
